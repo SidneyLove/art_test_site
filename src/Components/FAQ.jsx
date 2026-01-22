@@ -15,7 +15,7 @@ export const FAQ = () => {
                 aria-expanded="false" 
                 aria-controls="multiCollapseExample1"
             >
-                Я совсем не умею рисовать. Стоит ли мне идти на курс?
+                Я совсем не умею рисовать.<br/> Стоит ли мне идти на курс?
             </button>
             <div className="col">
                 <div className="collapse multi-collapse" id="multiCollapseExample1">

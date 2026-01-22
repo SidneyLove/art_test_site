@@ -30,7 +30,7 @@ export const AboutTheCourse = () => {
                 Материалы на курс
             </h2>
             <div className='d-flex col-12 mt-5'>
-                <div className='col-3 text-center'>
+                <div className='col-3 text-center align-self-start'>
                     <img src={paints} className='w-50'/>
                     <p className='responsive-text blue mt-3'>Краски</p>
                     <motion.button 
@@ -69,7 +69,7 @@ export const AboutTheCourse = () => {
                     </motion.div>) : null}
                     </AnimatePresence>
                 </div>
-                <div className='col-3 text-center'>
+                <div className='col-3 text-center align-self-start'>
                     <img src={brushes} className='w-50'/>
                     <p className='responsive-text blue mt-3'>Кисти</p>
                 </div>

@@ -10,9 +10,10 @@ export const WelcomeBlock = () => {
                 <div className="col-6 d-flex flex-column align-items-start p-0">
                     <h1 className='text-uppercase header-color responsive-header'>
                         <span className='responsive-header-welcome header-font'>Петербург</span> <br/>
-                        <b className='header-font'>сквозь года</b> <br/>
-                        <span className='responsive-text-m blue-dark'><b>с Владимиром Заруцким</b></span>
+                        <span className='header-font'>сквозь года</span>
                     </h1>
+                    <p className='responsive-text blue-dark text-uppercase'><b>с Владимиром Заруцким</b></p>
+                    
                     <ul className='responsive-text px-3 py-4'>
                         <li>Нарисуйте <span className='blue'>12 пейзажей:</span> от ретро Петербурга до сегодняшних дней</li>
                         <li>Изучите <span className='blue'>способы передачи особенностей архитектуры</span> с помощью акварели</li>

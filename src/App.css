@@ -27,19 +27,19 @@ body {
 }
 
 .responsive-header {
-  font-size: clamp(1rem, 9vw, 3rem);
+  font-size: clamp(1rem, 10vw, 4rem);
 }
 .responsive-header-welcome {
-  font-size: clamp(1.5rem, 10vw, 3.2rem);
+  font-size: clamp(1.5rem, 10vw, 4.2rem);
 }
 .responsive-text {
-  font-size: clamp(0.7rem, 1vw, 3rem);
+  font-size: clamp(0.9rem, 1vw, 3rem);
 }
 .responsive-text-s {
-  font-size: clamp(0.7rem, 0.8vw, 2rem);
+  font-size: clamp(0.8rem, 1vw, 2rem);
 }
 .responsive-text-m {
-  font-size: clamp(1rem, 1.5vw, 3rem);
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
 }
 
 .welcom-bg {
@@ -73,6 +73,7 @@ body {
     color: #496F91;
     background-color: #EDFBFE;
     border-radius: 5rem;
+    z-index: 2;
 }
 .paints-about-of-course {
     border: 1px solid #496F91;
