@@ -1,6 +1,5 @@
 {
   "name": "art_site",
-<<<<<<< HEAD
   "version": "0.0.0",
   "private": true,
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
@@ -9,12 +8,6 @@
   "author": "",
   "type": "module",
   "main": "eslint.config.js",
-=======
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "homepage": "https://SidneyLove.github.io/art_test_site",
->>>>>>> 7603237923d99bbac572894bdcbb5260772bb522
   "scripts": {
     "dev": "vite",
     "build": "vite build",
