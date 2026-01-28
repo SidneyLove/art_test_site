@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from "react"
 import { motion, AnimatePresence } from "motion/react";
 
@@ -79,4 +80,45 @@ export const RateCard = ({header, text, oldPrice, newPrice, imgSrc}) => {
             </button>
         </div>
     )
+=======
+import { useState } from "react"
+
+
+export const RateCard = ({header, text, oldPrice, newPrice, imgSrc}) => {
+
+    const [activeR, setActiveR] = useState(true);
+
+    return (
+        <div className="h-100 bg-white mb-5" style={{maxWidth: '75%'}}>
+            <h3 className="w-100 responsive-text-m header-font text-uppercase text-white py-4" style={{backgroundColor: '#496F91'}}>
+                {header}
+            </h3>
+            <img src={imgSrc} className="col-10 mt-3 px-2"/>
+            <ul className="responsive-text text-left px-5 mb-5">
+                <li className="mb-2">{text[1]}</li>
+                <li className="mb-2">{text[2]}</li>
+                <li className={text[4] ? "mb-2" : null}>{header === 'VIP' ? text[3] : <s>{text[3]}</s>}</li>
+                {text[4] ? <li>💰 {text[4]}</li> : null}
+            </ul>
+            <p className="responsive-text-m blue"><s>{activeR ? oldPrice + '₽' : (Number(oldPrice.replace(/[^0-9]/g, '')) / 70).toFixed(2) + '$'}</s></p>
+            <p className="responsive-header blue mb-5"><b>{activeR ? newPrice + '₽' : (Number(newPrice.replace(/[^0-9]/g, '')) / 70).toFixed(2) + '$'}</b></p>
+            <div className="d-flex col-12 justify-content-center responsive-text-m">
+                <p
+                    onClick={()=>setActiveR(!activeR)}
+                    className="col-2 text-white text-center p-0 rounded"
+                    style={{backgroundColor: activeR ? '#d68c67' : '#ffd6b6', cursor: activeR ? '' : 'pointer', pointerEvents: activeR ? 'none' : 'visible'}}
+                >₽</p>
+                <div style={{width: '1vw'}}/>
+                <p 
+                    onClick={()=>setActiveR(!activeR)}
+                    className="col-2 text-white text-center p-0 rounded" 
+                    style={{backgroundColor: !activeR ? '#d68c67' : '#ffd6b6', cursor: !activeR ? '' : 'pointer', pointerEvents: !activeR ? 'none' : 'visible'}}
+                >$</p>
+            </div>
+            <button className='btn btn-bg col-10 text-uppercase text-white responsive-text my-5 py-3'>
+                Принять участие
+            </button>
+        </div>
+    )
+>>>>>>> 7603237923d99bbac572894bdcbb5260772bb522
 }

@@ -1,4 +1,8 @@
 import './App.css'
+<<<<<<< HEAD
+=======
+import * as bootstrap from 'bootstrap';
+>>>>>>> 7603237923d99bbac572894bdcbb5260772bb522
 import { Navigation } from './Components/Navigation';
 import { AboutTheCourse } from './Components/AboutTheCourse';
 import { WelcomeBlock } from './Components/Welcome/WelcomeBlock';
